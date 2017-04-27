@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.gaurang.agrohelper.farmerafterlogin"
+    >
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="लोग आउट"
+        android:id="@+id/button2"
+        android:onClick="logout"
+        android:layout_below="@+id/button4"
+        android:layout_alignStart="@+id/button4"
+        android:layout_alignParentBottom="true"
+        android:layout_alignEnd="@+id/button4"
+        android:textSize="25dp"/>
+
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="समूह बातचीत"
+        android:id="@+id/button4"
+        android:onClick="chat"
+        android:layout_alignTop="@+id/button6"
+        android:layout_alignBottom="@+id/button6"
+        android:layout_alignParentEnd="true"
+        android:layout_toEndOf="@+id/button5"
+        android:textSize="25dp"/>
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="आपूर्तिकर्ता की जानकारी"
+        android:id="@+id/button5"
+        android:onClick="supp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_alignEnd="@+id/button6"
+        android:layout_below="@+id/button6"
+        android:textSize="25dp"/>
+
+    <Button
+        android:layout_width="175dp"
+        android:layout_height="250dp"
+        android:text="
+कृषि जानकारी"
+        android:id="@+id/button6"
+        android:onClick="meg"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:textSize="25dp"/>
+
+</RelativeLayout>
